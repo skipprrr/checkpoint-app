@@ -437,7 +437,7 @@ async function renderHome(wrap){
     ]));
   } else {
     const hr=new Date().getHours();
-    const gr=hr<12?'Good morning':'hr<17?Good afternoon':'Good evening';
+    const gr=hr<12?'Good morning':hr<17?'Good afternoon':'Good evening';
     p.appendChild(el('div',{cls:'hero anim-in'},[
       el('div',{cls:'hero-label',txt:fmtDate(new Date())}),
       el('div',{cls:'hero-title',txt:'"'+todayQuote()+'"'}),
